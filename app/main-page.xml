@@ -1,0 +1,26 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    <ActionBar title="Voice Assistant" icon="">
+        <ActionItem tap="{{ toggleWakeWordDetection }}" 
+                   ios.position="right" 
+                   android.position="actionBar">
+            <Label text="{{ isWakeWordActive ? '🎤 Active' : '🎤 Inactive' }}" 
+                   class="p-2" />
+        </ActionItem>
+    </ActionBar>
+
+    <StackLayout class="p-4">
+        <Label text="{{ isWakeWordActive ? 'Say Hey Assistant to wake me' : 'Wake word detection is off' }}"
+               class="text-lg text-center mb-2 text-gray-600" />
+               
+        <Label text="{{ isListening ? 'Listening...' : 'Tap to speak' }}" 
+               class="text-2xl text-center mb-4" />
+        
+        <Button text="{{ isListening ? 'Stop' : 'Start' }}" 
+                tap="{{ startListening }}" 
+                class="{{ isListening ? 'bg-red-500' : 'bg-blue-500' }} text-white p-4 rounded-full w-32 h-32 self-center" />
+        
+        <Label text="{{ response }}" 
+               class="text-lg text-center mt-4 p-4 bg-gray-100 rounded-lg" 
+               textWrap="true" />
+    </StackLayout>
+</Page>

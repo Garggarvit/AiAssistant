@@ -1,0 +1,33 @@
+{
+  "name": "stackblitz-nativescript-typescript",
+  "main": "app/app.ts",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@nativescript/core": "~8.8.0",
+    "@nativescript/phone": "^3.0.3",
+    "@nativescript/contacts": "^3.0.0",
+    "@nativescript/local-notifications": "^6.1.1",
+    "@nativescript/media": "^2.0.0",
+    "@nativescript/background-http": "^5.0.2",
+    "@nativescript/permissions": "^1.0.3",
+    "node-llama-cpp": "^2.8.8",
+    "@picovoice/porcupine-nativescript": "^2.2.0"
+  },
+  "devDependencies": {
+    "@nativescript/android": "~8.8.0",
+    "@nativescript/ios": "~8.8.0",
+    "@nativescript/preview-cli": "1.0.13",
+    "@nativescript/stackblitz": "0.0.8",
+    "@nativescript/tailwind": "^2.1.0",
+    "@nativescript/types-minimal": "~8.8.0",
+    "@nativescript/webpack": "~5.0.0",
+    "tailwindcss": "~3.4.0",
+    "typescript": "~5.4.0"
+  },
+  "scripts": {
+    "preview": "ns preview",
+    "android": "ns run android",
+    "ios": "ns run ios"
+  }
+}
